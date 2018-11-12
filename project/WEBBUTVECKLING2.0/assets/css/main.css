@@ -1,0 +1,200 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/yorkwhiteletter.ttf);
+}
+@font-face {
+    font-family: mySecondFont;
+    src: url(../fonts/arial.ttf)
+}
+
+.header1 .as:hover, .aactive {
+    border-bottom: 3px solid white;
+    background-color: #5a5858;
+}
+
+.adropdown:hover {
+    background-color: #5a5858;
+}
+
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.header1 {
+    background-color: #464646;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex: 1;
+}
+
+.s3 iframe:hover {
+    transform: scale(1.02);
+}
+
+.header1 img:hover {
+    
+    transform: rotate(20deg) scale(1.2);
+}
+
+.header1 img {
+    transition: transform 0.2s;
+    align-items: right;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.header1 h1 {
+    text-align: center;
+    font-size: 40px;
+    padding-right: 10px;
+    margin: 8px;
+    font-family: myFirstFont;
+    border-right: 2px solid white;
+}
+.header1 nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header1 .as {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 1000;
+    text-decoration: none;
+    padding: 0px 30px;
+    font-family: mySecondFont;
+    transition: 0.2s;
+}
+
+.header1 .adropdown {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 1000;
+    text-decoration: none;
+    padding: 0px 30px;
+    font-family: mySecondFont;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.s2 {
+    display: flex;
+}
+
+.figure1 {
+    margin: 0px;
+}
+
+.s1 {
+    border-bottom: 5px solid #A5A4A4;
+    
+}
+
+.s3 {
+    background-color: #A5A4A4;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #464646;
+    margin-bottom: 50px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+button {
+    background-color: #464646;
+    font-size: inherit;
+    border: none;
+}
+
+.s3  h1 {
+    -webkit-text-stroke: 1px black;
+    background-color: #464646;
+    text-align: center;
+    font-family: mySecondFont;
+    font-size: 50px;
+    color: white;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+}
+    
+
+.s3 figure {
+    display: flex;
+    justify-content: center;
+}
+
+.s3 iframe {
+    width: 720px;
+    height: 480px;
+    border: none;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    transition: transform 0.3s;
+}
+
+.s3 .h3 h3 {
+    font-family: mySecondFont;
+    text-align: center;
+    font-weight: 1000;
+    color: white;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background-color: #464646;
+    border: 3px solid white;
+    border-radius: 3px;
+    font-size: 50px;
+}
+
+.s3 p {
+    font-size: 15px;
+    color: white;
+    font-family: mySecondFont;
+}
+
+.aactive {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 1000;
+    text-decoration: none;
+    padding: 0px 30px;
+    font-family: mySecondFont;
+}
+
+.dropdown-content a {
+    color: white;
+    font-family: mySecondFont;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #464646;
+    min-width: 92.91px;
+    text-align: center;
+    z-index: 1;
+    margin-top: 59px;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
