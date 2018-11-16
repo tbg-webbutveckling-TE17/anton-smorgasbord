@@ -16,7 +16,7 @@ body {
     display: grid;
     grid-template-areas:
         "hejsan jag heter ful"
-        "söker söker söker söker";
+        "finis finis sker sker";
 }
 
 .grid-item {
@@ -47,7 +47,11 @@ body {
 }
 
 .grid-item:nth-child(5) {
-    grid-area: söker;
+    grid-area: sker;
+}
+
+.grid-item:nth-child(6) {
+    grid-area: finis;
 }
 
 .grid-item a:hover {
