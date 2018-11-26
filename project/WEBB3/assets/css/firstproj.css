@@ -14,13 +14,13 @@ body .grid {
         "mm mm mm"
         "mm mm mm";
     
-    background: #fd3c3c;
+    background: ;
     margin: auto;
 }
 
 body .grid .grid-item {
     text-align: center;
-    margin-bottom: -1.5px;
+    margin-bottom: -1.4px;
     margin-left: -1px;
     
 }
