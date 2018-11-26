@@ -1,0 +1,56 @@
+
+@charset "utf-8";
+
+body {
+    
+}
+
+header {
+    
+}
+ 
+.grid-item img {
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    text-shadow: 0px 3px 2px black;
+    color: white;
+    
+    height: auto;
+    width: auto;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 100px;
+    margin: 0px auto 0px auto;
+    padding: 0px;
+    background: teal;
+    border-bottom: 3px solid black;
+    
+    
+    font-family: arial;
+    -webkit-text-stroke: 1px black;
+}
+
+body .grid {
+    
+    margin: auto;
+    
+    display: grid;
+    width: 100px;
+    height: 100px;
+    grid-template-areas: 
+        "hej hej hej"
+        "hej hej hej"
+        "hej hej hej";
+}
+
+body .grid .grid-item {
+    height: auto;
+    margin: auto;
+}
+
+.grid-item:nth-child(1) {
+    
+}
