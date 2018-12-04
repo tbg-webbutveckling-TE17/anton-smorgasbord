@@ -1,11 +1,12 @@
 @charset "utf-8";
 
 body {
-    background: url("../images/blogg/bloggbackground.jpg");
+    background-image: url(../images/blogg/bloggbackground.jpg);
     
     margin: 0;
     padding: 0;
 }
+
 
 header {
     background: rgb(0, 0, 0, 40%);
@@ -17,7 +18,19 @@ header {
 article {
     margin: auto;
     
-    width: 65%;
+    width: 60%;
+}
+
+.date {
+    margin: 50px auto 30px auto;
+    
+    width: 60%;
+    
+    color: #117151;
+    
+    text-shadow: 0px 3px 0px black;
+    font-family: arial;
+    font-weight: 1000
 }
 
 .hh1 {
@@ -54,5 +67,9 @@ article {
 }
 
 .firsta {
+    background: red;
     
+    height: 600px;
+    
+    border-radius: 50px;
 }
