@@ -1,18 +1,16 @@
 @charset "utf-8";
 
 body {
-<<<<<<< HEAD
+    
     background: url("../images/blogg/bloggbackground.jpg");
     background-repeat: no-repeat;
     background-size: 100% 154px;
-=======
+    
     background-image: url(../images/blogg/bloggbackground.jpg);
->>>>>>> 743bd92ff51211c75606d030cb75956fc4a1d939
     
     margin: 0;
     padding: 0;
     
-    min-height: 2000px;
 }
 
 
@@ -28,27 +26,12 @@ article {
     
     margin: auto;
     
-<<<<<<< HEAD
     width: 65%;
     height: 400px;
     
     border: 3px solid white;
     border-radius: 50px;
-=======
     width: 60%;
-}
-
-.date {
-    margin: 50px auto 30px auto;
-    
-    width: 60%;
-    
-    color: #117151;
-    
-    text-shadow: 0px 3px 0px black;
-    font-family: arial;
-    font-weight: 1000
->>>>>>> 743bd92ff51211c75606d030cb75956fc4a1d939
 }
 
 ul {
@@ -96,7 +79,6 @@ ul {
     padding: 13px;
 }
 
-<<<<<<< HEAD
 .s1 {
     background: url("../images/blogg/bloggbackground2.jpg");
     padding-bottom: 30px;
@@ -124,12 +106,4 @@ ul {
     width: 65%;
     
     font-family: arial;
-=======
-.firsta {
-    background: red;
-    
-    height: 600px;
-    
-    border-radius: 50px;
->>>>>>> 743bd92ff51211c75606d030cb75956fc4a1d939
 }
