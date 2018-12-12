@@ -7,48 +7,80 @@ body {
 }
 
 header {
-    background-image: linear-gradient(to right, #c9bfbf, #7ccde0);
+    background-image: linear-gradient(to right, #c9bfbf, #7ccde0, #c9bfbf);
     
     border-top: 3px solid white;
     border-bottom: 3px solid white;
 }
 
 article {
-    background-color: red;
+    background-color: rgba(0, 0, 0, 50%);
     
     margin: auto;
     
     width: 65%;
-    height: 400px;
+    height: 420px;
     
-    border: 3px solid white;
+    border: 2px solid white;
     border-radius: 10px;
     width: 60%;
 }
 
-.olaamigo {
-    display: flex;
-    justify-content: center;
-    
-}
 
 iframe {
     border: none;
-    border: 3px solid white;
-    border-radius: 5px;
     
-    width: 60%;
+    height: 100%;
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+.links li a {
+    color: white;
+    
+    font-weight: 700;
+    font-family: arial;
+    text-decoration: none;
+    
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+}
+
+.links li a:hover {
+    font-size: 20px;
+    
+}
+
+.iframe-section {
+    border-radius: 50%;
+    border: 2px solid white;
+    
+    overflow: hidden;
+    
+    margin: auto;
+    
+    width: 200px;
     height: 200px;
 }
 
+
 .contentheader {
+    color: white;
+    
     font-family: arial;
     text-align: center;
 }
 
 .contenttext {
+    color: white;
+    
     margin: 10px 50px;
     padding: 0;
+    
+    font-family: arial;
 }
 
 .links {
@@ -58,8 +90,6 @@ iframe {
     
     justify-content: space-around;
     align-items: center;
-    
-    list-style-type: none;
 }
 
 
