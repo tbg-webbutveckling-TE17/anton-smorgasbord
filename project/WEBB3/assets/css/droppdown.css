@@ -13,17 +13,32 @@ header {
 
 ul {
     display: flex;
+    
+    align-content: center;
     justify-content: center;
     
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
+
+
 
 li {
     padding: 30px 0px ;
     list-style-type: none;
 }
 
+
 a { 
+ 
+}
+
+a:hover {
+    background-color: rgba(255, 0, 0, 0.56);
+    border-bottom:  3px black;
+}
+
+.mainli {
     color: white;
     
     padding: 30px 30px;
@@ -33,7 +48,71 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    background-color: rgba(255, 0, 0, 0.56);
-    border-bottom:  3px black;
+.dropdown-content {
+    background-color: black;
+    
+    display: none;
+    
+    margin-top: 30px;
+    padding: 0;
+    
+    width: 214px;
+    
+    position: absolute;
+}
+
+.dropdowna {
+    display: flex;
+    justify-content: space-around;
+    
+    flex-direction: column;
+    margin: 0;
+}
+
+.dropdowna a  {
+    color: white;
+    
+    font-family: arial;
+    text-decoration: none;
+    
+    margin-top: 6px;
+    
+    width: 100%;
+    
+}
+
+.dropdowna , .dropdowna .dropdown2 a {
+    display: flex;
+    width: 100%;
+    
+    margin-top: 5px;
+}
+
+.dropdowna .dropdown2 {
+    margin: 5px 0px;
+    
+    width: 100%;
+    
+    padding: 0px 0px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content2 {
+    background-color: skyblue;
+    
+    display: none;
+    
+    margin: 0px 10px 0px 0px;
+    
+    width: 214px;
+    
+    position: absolute;
+}
+
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+    
 }
