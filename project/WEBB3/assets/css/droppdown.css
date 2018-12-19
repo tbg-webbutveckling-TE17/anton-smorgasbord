@@ -51,7 +51,10 @@ a:hover {
 .dropdown-content {
     background-color: black;
     
-    display: none;
+    transition: all ease-in 0.25s;
+    
+    visibility: hidden;
+    opacity: 0;
     
     margin-top: 30px;
     padding: 0;
@@ -97,7 +100,8 @@ a:hover {
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 .dropdown-content2 {
