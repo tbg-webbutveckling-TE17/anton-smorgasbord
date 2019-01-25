@@ -1,1 +1,119 @@
 @charset "utf-8";
+
+body {
+    margin: 0;
+}
+
+header {
+    background: grey;
+    
+    height: 100px;
+}
+
+nav {
+    
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    
+    margin: 15px 0px;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: #414141;
+    text-decoration: none;
+    font-family: arial;
+    
+    transition: all 0.25s;
+    margin: 5px 0px;
+}
+
+.top nav a:hover {
+    color: aquamarine;
+    font-size: 20px;
+}
+
+.bottom {
+    display: flex;
+    flex-flow: row;
+}
+
+.right {
+    display: grid;
+    grid-template-rows: 240px 250px 260px;
+    grid-column-gap: 5px;
+    grid-template-areas: 
+        "img img"
+        "video video"
+        "img2 img2"
+        "text1 text2"
+        "da da"
+    ;
+    margin: 0px 15px;
+    
+    width: 20%;
+}
+
+.left {
+    margin-left: 15px;
+    width: 80%;
+}
+
+.box {
+    background: grey;
+    
+    margin-bottom: 15px;
+    
+    height: 300px;
+}
+
+.box2 {
+    background: grey;
+    
+    margin: 0px 0px 15px 0px;
+}
+
+.links {
+    background: grey;
+}
+
+.verybottom section {
+    height: 20px;
+    
+    background: grey;
+}
+
+.box2:nth-child(1) {
+    grid-area: img;
+}
+
+.box2:nth-child(2) {
+    grid-area: video;
+}
+
+.box2:nth-child(3) {
+    grid-area: img2;
+}
+
+.box2:nth-child(4) {
+    background: green;
+    grid-area: text1;
+}
+
+.box2:nth-child(5) {
+    grid-area: text2;
+    
+    background: green;
+}
+
+.box2:nth-child(6) {
+    background: #1cff62;
+    grid-area: da;
+}
