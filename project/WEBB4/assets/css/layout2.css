@@ -36,15 +36,17 @@ a {
     text-decoration: none;
 }
 
-header .left {
+header .left1 {
     background: grey;
     
     width: 20%;
     height: 50px;
 }
 
-header .right {
+header .right1 {
     background: grey;
+    
+    margin-right: 0;
     
     width: 50%;
     height: 50px;
@@ -54,45 +56,48 @@ header .right {
     display: flex;
     flex-flow: row;
     
-    margin-bottom: 15px;
+    height: 855px;
+    max-height: 855px;
 }
 
 .left {
-    width: 33%;
+    width: 50%;
 }
 
-.mid2 {
-    width: 33%;
+.mid1 .mid2 {
+    margin-bottom: 0px;
+    width: 25%;
+}
+
+.mid1 .right {
+    margin-right: 0px;
+
+    width: 25%;
+}
+
+.mid1 .left, .right, .mid2 {
     margin-bottom: 15px;
-}
-
-.right {
-    width: 33%;
-}
-
-.left, .right, .mid2 {
     margin-right: 15px;
+    
 }
 
-.box1, .box2, .box3 {
+.mid1 .box1, .box2, .box3 {
     background: grey;
     
     margin-bottom: 15px;
-    
-    
 }
 
 .box1:nth-child(1) {
-    height: 200px;
+    height: 20%;
+    
 }
 
 .box1:nth-child(2) {
-    height: 240px;
+    height: 30%;
 }
 
 .box1:nth-child(3) {
-    margin-bottom: 0;
-    height: 400px;
+    height: 50%;
 }
 
 .box2:nth-child(1) {
@@ -100,7 +105,6 @@ header .right {
 }
 
 .box2:nth-child(2) {
-    margin-bottom: 0;
     height: 20%;
 }
 
@@ -115,3 +119,4 @@ header .right {
 .box3:nth-child(3) {
     height: 25%;
 }
+
