@@ -101,11 +101,11 @@ header .right1 {
 }
 
 .box2:nth-child(1) {
-    height: 80%;
+    height: 19.67%;
 }
 
 .box2:nth-child(2) {
-    height: 20%;
+    height: 80.33%;
 }
 
 .box3:nth-child(1) {
@@ -118,5 +118,12 @@ header .right1 {
 
 .box3:nth-child(3) {
     height: 25%;
+}
+
+footer {
+    background: Grey;
+    height: 70px;
+    
+    margin-top: 30px;
 }
 

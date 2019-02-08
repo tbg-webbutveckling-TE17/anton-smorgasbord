@@ -7,11 +7,12 @@ body {
 header {
     background: grey;
     
+    margin:0px 15px;
     height: 100px;
 }
 
 nav {
-    
+    margin: 15px;
 }
 
 ul {
