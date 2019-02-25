@@ -133,12 +133,12 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     
-    animation: fake 40s infinite ;
-    height: 700px;
+    animation: fake 40s infinite ease-out ;
+    height: 100%;
     width: 1400px;
 }
 
-h1 {
+#fakeImageSlider h1 {
     animation: ;
     text-align: center;
 }
@@ -157,6 +157,33 @@ h1 {
 }
 
 .allotOfImages {
-    width: 60%;
+    width: 100%;
     margin: 50px auto 0px auto;
+}
+
+figure img {
+    height: 200px;
+    width: 200px;
+    
+    transition: 0.2s;
+    
+    box-sizing: border-box;
+    border: 0px solid;
+    border-radius: 10px;
+    
+}
+
+figure img:hover {
+    border: 10px solid #797979;
+}
+
+figcaption {
+    text-align: left;
+    font-family: arial;
+    
+    width: 100%;
+}
+
+figure h1 {
+    margin: 0;
 }
