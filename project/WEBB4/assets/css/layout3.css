@@ -1,17 +1,24 @@
 body {
-    
+   margin: 0; 
 }
 
 header {
+    display: flex;
     
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
 }
 
 nav {
-    
+    width: 500px;
+    margin-top: 15px;
 }
 
 ul {
-    
+    display: flex;
+    justify-content: space-between;
+    padding: 0; 
 }
 
 li {
@@ -19,9 +26,137 @@ li {
 }
 
 a {
+    background-color: #c7c7c7;
+    
+    padding: 0px 20px;
+    
+    text-align: center;
+    
+    transition: 0.2s;
+    
+    border-radius: 2px;
+    
+    color: white;
+    text-shadow: 1px 1.5px 0px black;
+    font-family: arial;
+    font-weight: 900;
     text-decoration: none;
+}
+
+nav a:hover {
+    background: #777777;
 }
 
 .centerimg {
     
+}
+
+.logo {
+    border-radius: 100%;
+    box-sizing: border-box;
+    border: 0px solid;
+    
+    margin-top: 20px;
+    
+    transition: 0.2s;
+    
+    height: 100px;
+    width: 100px;
+}
+
+.logo:hover {
+    border: 5px solid black;
+}
+
+.fakeImg {
+    background-color: #d0d0d0;
+    
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    
+    display: flex;
+    
+    margin-top: 10px;
+    
+    height: 700px;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+#image {
+}
+
+#leftarrow {
+    margin-left: 100px;
+    
+    height: 50px;
+    width: 50px;
+}
+
+#rightarrow {
+    margin-right: 100px;
+    height: 50px;
+    width: 50px;
+}
+
+#rightarrow:hover {
+    
+}
+
+@keyframes fake {
+    0%     {background-image: url(../images/layouts3/forWeb1.png);}
+    8%     {background-image: url(../images/layouts3/forWeb1.png);}   
+    16%    {background-image: url(../images/layouts3/forWeb2.png);}
+    24%    {background-image: url(../images/layouts3/forWeb2.png);}
+    32%    {background-image: url(../images/layouts3/forWeb3.png);}
+    40%    {background-image: url(../images/layouts3/forWeb3.png);}
+    48%    {background-image: url(../images/layouts3/forWeb4.png);}
+    56%    {background-image: url(../images/layouts3/forWeb4.png);}
+    64%    {background-image: url(../images/layouts3/forWeb5.png);}
+    72%    {background-image: url(../images/layouts3/forWeb5.png);}
+    80%    {background-image: url(../images/layouts3/forWeb6.png);}
+    88%    {background-image: url(../images/layouts3/forWeb6.png);}
+    100%   {background-image: url(../images/layouts3/forWeb1.png);}
+}
+
+#fakeImageSlider {
+    display: flex;
+    
+    color: rgba(0, 0, 0, 50%);
+    
+    -webkit-text-stroke: 2px white;
+    font-size: 80px;
+    font-weight: 900;
+    font-family: arial;
+    
+    justify-content: center;
+    align-items: center;
+    
+    animation: fake 40s infinite ;
+    height: 700px;
+    width: 1400px;
+}
+
+h1 {
+    animation: ;
+    text-align: center;
+}
+
+.over {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.under {
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 50px;
+}
+
+.allotOfImages {
+    width: 60%;
+    margin: 50px auto 0px auto;
 }
