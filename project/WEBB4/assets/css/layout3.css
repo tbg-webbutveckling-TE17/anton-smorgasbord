@@ -145,7 +145,6 @@ nav a:hover {
 }
 
 #fakeImageSlider h1 {
-    animation: ;
     text-align: center;
 }
 
@@ -164,7 +163,12 @@ nav a:hover {
 
 .allotOfImages {
     width: 70%;
-    margin: 50px auto 0px auto;
+    margin: 50px auto 0 auto;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
 }
 
 figure img {
@@ -212,7 +216,7 @@ footer {
     
     height: 220px;
     
-    margin-top: 50px;;
+    margin-top: 50px;
     
     font-family: arial;
 }
