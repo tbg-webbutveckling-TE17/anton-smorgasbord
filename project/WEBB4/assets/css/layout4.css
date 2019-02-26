@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+body {
+    
+}
+
+#login1 {
+    width: 95%;
+}
+
+#login1 ul {
+    display: flex;
+    justify-content: space-between;
+    
+    margin-left: auto;
+    
+    width: 30%;
+}
+
+#login1 ul section label {
+    margin-right: 10px;
+}
+
+#login1 ul a {
+    color: black;
+}
+
+#login1 ul a:hover, header a:hover {
+    text-decoration: underline;
+}
+
+#belowLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 135px;
+    width: 100%;
+    max-height: 135px;
+    
+    background-color: rgba(255, 0, 0, 0.24);
+}
+
+#belowLogin h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#belowLoginLeft {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    border: 3px solid black;
+    
+    height: 100%;
+    width: 20%;
+}
+
+#belowLoginMid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0px 20px;
+    
+    border: 3px solid black;
+    
+    height: 100%;
+    width: 65%;
+}
+
+#belowLoginMid h1 {
+    font-size: 100px;
+}
+
+#belowLoginRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: 3px solid black;
+    
+    height: 100%;
+    width: 15%;
+    
+    text-align: center;
+}
+
+header { 
+    display: flex;
+    align-items: center;
+    
+    border: solid 3px;
+    
+    margin-top: 20px;
+    
+    height: 30px;
+    background-color: rgba(255, 0, 0, 0.26);
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav ul section {
+    margin-right: 20px;
+}
+
+header nav ul li {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    
+    margin: 0 140px 0 0;
+}
+
+header nav ul section input[type] {
+    padding-left: 10px;
+    width: 600px;
+}
+
+header nav ul section label {
+    margin-right: 5px;
+}
+
+header nav ul a {
+    color: black;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
