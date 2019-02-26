@@ -203,6 +203,8 @@ figure h1 {
 footer {
     display: flex;
     
+    border-top: solid 3px #d0d0d0;
+    
     justify-content: space-around;
     align-items: ;
     
