@@ -15,7 +15,7 @@ nav {
     margin-top: 15px;
 }
 
-ul {
+nav ul {
     display: flex;
     justify-content: space-between;
     padding: 0; 
@@ -25,14 +25,14 @@ li {
     list-style-type: none;
 }
 
-a {
+nav a {
     background-color: #c7c7c7;
     
     padding: 0px 20px;
     
     text-align: center;
     
-    transition: 0.2s;
+    transition: 0.15s;
     
     border-radius: 2px;
     
@@ -40,11 +40,17 @@ a {
     text-shadow: 1px 1.5px 0px black;
     font-family: arial;
     font-weight: 900;
+    
+}
+
+a {
     text-decoration: none;
 }
 
 nav a:hover {
     background: #777777;
+    
+    text-shadow: -2px -1px 0px black;
 }
 
 .centerimg {
@@ -69,16 +75,16 @@ nav a:hover {
 }
 
 .fakeImg {
-    background-color: #d0d0d0;
+    background-color: #dedede;
     
-    border-bottom: 3px solid black;
-    border-top: 3px solid black;
+    border-bottom: 3px solid #d0d0d0;
+    border-top: 3px solid #d0d0d0;
     
     display: flex;
     
     margin-top: 10px;
     
-    height: 700px;
+    height: 600px;
     
     justify-content: space-between;
     align-items: center;
@@ -169,11 +175,14 @@ figure img {
     
     box-sizing: border-box;
     border: 0px solid;
+    box-shadow: 3px 3px 0px black;
     border-radius: 10px;
     
 }
 
 figure img:hover {
+    box-shadow: 0px 0px 0px black;
+    border-radius: 30px;
     border: 10px solid #797979;
 }
 
@@ -189,4 +198,42 @@ figcaption {
 figure h1 {
     text-align: center;
     margin: 0;
+}
+
+footer {
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: ;
+    
+    background-color: #dedede;
+    
+    height: 220px;
+    
+    margin-top: 50px;;
+    
+    font-family: arial;
+}
+
+h3 {
+    
+}
+
+footer a {
+    font-size: 12px;
+}
+
+footer ul {
+    display: flex;
+    
+    flex-flow: column;
+    padding: 0;
+}
+
+footer img {
+    transition: 0.25s;
+}
+
+footer img:hover {
+    transform: scale(1.05);
 }
