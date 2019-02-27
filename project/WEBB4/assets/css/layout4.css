@@ -5,20 +5,35 @@ body {
 }
 
 #login1 {
-    width: 95%;
+    width: 100%;
 }
 
 #login1 ul {
     display: flex;
-    justify-content: space-between;
+    flex-flow: row;
+    justify-content: 6;
+    align-items: center;
     
+    margin-top: 0;
     margin-left: auto;
     
-    width: 30%;
+    width: 50%;
+}
+
+#login1 ul li {
+    width: 100%;
+}
+
+#login1 ul section {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
 }
 
 #login1 ul section label {
-    margin-right: 10px;
+    width: 60px;
+    margin-right: 15px;
+    
 }
 
 #login1 ul a {
@@ -118,21 +133,26 @@ header nav ul li {
     align-content: center;
     align-items: center;
     
-    margin: 0 140px 0 0;
+    margin: 0 100px 0 0;
 }
 
 header nav ul section input[type] {
     padding-left: 10px;
-    width: 600px;
+    width: ;
 }
 
 #login2 {
     padding-left: 10px;
+    height: 15px;
+}
+
+#login22 {
+    margin-right: ;
 }
 
 #belowLoginLeft img {
     height: 135px;
-    width: 375.2px;
+    width: 100%;
 }
 
 header nav ul section label {
@@ -154,4 +174,60 @@ li {
 a {
     text-decoration: none;
 }
+
+#left {
+    width: 20%;
+}
+
+#mid {
+    width: 65%;
+}
+
+#right {
+    display: flex;
+    flex-flow: column;
+    
+    width: 15%;
+}
+
+#right ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: solid 3px black;
+    height: 141px;
+    
+    margin: 20px 0px;
+}
+
+#right ul p {
+    margin: 0;
+    
+    padding-left: 10px;
+    
+    width: 186.9px;  
+    
+    text-align: ;
+}
+
+#right img {
+    border: solid 3px black;
+}
+
+#right #bestImg {
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    
+}
+
+main img {
+    width: : 100%;
+    margin:  0;
+}
+
 
