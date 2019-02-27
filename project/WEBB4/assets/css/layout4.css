@@ -126,6 +126,15 @@ header nav ul section input[type] {
     width: 600px;
 }
 
+#login2 {
+    padding-left: 10px;
+}
+
+#belowLoginLeft img {
+    height: 135px;
+    width: 375.2px;
+}
+
 header nav ul section label {
     margin-right: 5px;
 }
