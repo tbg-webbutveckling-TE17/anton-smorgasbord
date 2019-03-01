@@ -1,73 +1,23 @@
 @charset "utf-8";
 
 body {
-    background-image: url(../../assets/images/kerensa-pickett-1132519-unsplash.jpg);
+    background-color: green
 }
 
-.wrapper {
-    margin: auto;
-    width: 70%;
-}
-
-.grid {
-    border: 1px solid black;
-    height: 100px;
-    
+main {
     display: grid;
-    grid-template-areas:
-        "hejsan jag heter ful"
-        "finis finis sker sker";
-}
-
-.grid-item {
-    display: flex;
+    grid-template-columns: 100px 100px;
     justify-content: center;
-    align-items: center;
+    
+    border: ;
+    
+    background-color: red;
+    
+    width: 80%;
+    
+    margin: auto;
 }
 
-.wrapper .grid-item:nth-child(odd) {
-    color: black;
-    -webkit-text-stroke: 1px white;
-}
-
-.grid-item a {
-    font-size: 25px;
-    text-decoration: none;
-    color: white;
-
-    text-decoration: underline;
-    font-weight: 1000;
-    -webkit-text-stroke: 1px black;
-    transition: 0.25s;
-    font-family: arial;
-}
-
-.grid-item:nth-child(4) {
-    grid-area: ;
-}
-
-.grid-item:nth-child(5) {
-    grid-area: sker;
-}
-
-.grid-item:nth-child(6) {
-    grid-area: finis;
-}
-
-.grid-item a:hover {
-    color: yellow;
-    transform: scale(1.05)
-}
-
-.grid-item .tjock {
-    text-align: center;
-}
-
-.wrapper h1 {
-    -webkit-text-stroke: 0.5px white;
-    font-family: arial;
-    text-align: center;
-    font-weight: 1000;
-    margin-bottom: 0px;
-    font-size: 40px;
+section {
+    border: 1px solid black;
 }
