@@ -11,17 +11,19 @@ body {
 #login1 ul {
     display: flex;
     flex-flow: row;
-    justify-content: 6;
+    justify-content: ;
     align-items: center;
     
     margin-top: 0;
     margin-left: auto;
     
-    width: 50%;
+    width: 55%;
 }
 
 #login1 ul li {
     width: 100%;
+    
+    margin-left:;
 }
 
 #login1 ul section {
@@ -53,7 +55,7 @@ body {
     width: 100%;
     max-height: 135px;
     
-    background-color: rgba(255, 0, 0, 0.24);
+    
 }
 
 #belowLogin h1 {
@@ -70,6 +72,8 @@ body {
     
     height: 100%;
     width: 20%;
+    
+    background-color: rgba(255, 0, 0, 0.24);
 }
 
 #belowLoginMid {
@@ -83,6 +87,8 @@ body {
     
     height: 100%;
     width: 65%;
+    
+    
 }
 
 #belowLoginMid h1 {
@@ -176,18 +182,33 @@ a {
 }
 
 #left {
-    width: 20%;
+    display: flex;
+    
+    border: solid 3px black;
+    
+    width: 243.87px;
+    height: 475px;
+    
+    margin-right: 20px;
+    margin-left: 0px;
+    
+    padding: 0px;
 }
 
 #mid {
-    width: 65%;
+    border: solid 3px;
+    
+    width: 779.07px;
+    height: 475px;
+    
+    margin-right: 20px;
 }
 
 #right {
     display: flex;
     flex-flow: column;
     
-    width: 15%;
+    width: 186.9px;
 }
 
 #right ul {
@@ -196,23 +217,24 @@ a {
     align-items: center;
     
     border: solid 3px black;
+
     height: 141px;
     
-    margin: 20px 0px;
+    margin: 0px 0px 20px 0;
 }
 
 #right ul p {
     margin: 0;
     
-    padding-left: 10px;
-    
-    width: 186.9px;  
+    padding-left: 10px;  
     
     text-align: ;
 }
 
 #right img {
     border: solid 3px black;
+    
+    
 }
 
 #right #bestImg {
@@ -223,11 +245,124 @@ main {
     display: flex;
     justify-content: center;
     
+    margin: 17px 0px;
+    
+    width: 100%;
+    
 }
 
-main img {
-    width: : 100%;
-    margin:  0;
+#mid section p {
+    width: 350px;
+    
+    margin-left: 20px;
 }
 
+#mid section h1 {
+    margin-left: 20px;
+}
 
+#mid section figure {
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 23px;
+}
+
+#mid #textAndImg img {
+    height: 235px;
+}
+
+#mid section figure figcaption {
+    text-align: center;
+}
+
+#textAndImg {
+    display: flex;
+}
+
+#manyImages {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 90%;
+    
+    margin: auto;
+    margin-top: 40px;
+}
+
+#manyImages img {
+    border-radius: 10px;
+    
+    transition: 0.2s;
+    
+/*    margin-right: 10px;*/
+}
+
+#manyImages img:hover {
+    border-radius: 0;
+    
+    transform: scale(2);
+}
+
+#manyImages #rightImage {
+    margin: 0;
+}
+
+#arrows {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 90%;
+    
+    margin: auto;
+    margin-top: 10px;
+}
+
+#arrows img {
+    height: 20px;
+    
+    transition: 0.2s;
+}
+
+#arrows img:hover {
+    transform: scale(1.5);
+}
+
+#left ul {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    
+    width: 80%;
+    height: 90%;
+    
+    margin: auto;
+    margin-top: 20px;
+}
+
+#left ul p {
+    width: 100%;
+    margin: 0;
+}
+
+#lastFourImg {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    
+    height: 85%;
+    
+    margin: auto;
+    margin-right: 20px;
+}
+
+#lastFourImg img {
+    border-radius: 10px;
+    
+    transition: 0.2s;
+}
+
+#lastFourImg img:hover {
+    border-radius: 0;
+    
+    transform: scale(1.5);
+}
