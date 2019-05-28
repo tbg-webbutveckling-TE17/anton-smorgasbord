@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+body {
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 15px;
+}
+
+nav {
+    background-color: grey;
+    
+    margin-bottom: 15px;
+    padding: 5px 0px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    
+}
+
+a {
+    color: white;
+    text-shadow: 1px 1px black;
+    font-family: arial;
+    text-decoration: none;
+}
+
+header .left1 {
+    background: grey;
+    
+    width: 20%;
+    height: 50px;
+}
+
+header .right1 {
+    background: grey;
+    
+    margin-right: 0;
+    
+    width: 50%;
+    height: 50px;
+}
+
+.mid1 {
+    display: flex;
+    flex-flow: row;
+    
+    height: 855px;
+    max-height: 855px;
+}
+
+.left {
+    width: 50%;
+}
+
+.mid1 .mid2 {
+    margin-bottom: 0px;
+    width: 25%;
+}
+
+.mid1 .right {
+    margin-right: 0px;
+
+    width: 25%;
+}
+
+.mid1 .left, .right, .mid2 {
+    margin-bottom: 15px;
+    margin-right: 15px;
+    
+}
+
+.mid1 .box1, .box2, .box3 {
+    background: grey;
+    
+    margin-bottom: 15px;
+}
+
+.box1:nth-child(1) {
+    height: 20%;
+    
+}
+
+.box1:nth-child(2) {
+    height: 30%;
+}
+
+.box1:nth-child(3) {
+    height: 50%;
+}
+
+.box2:nth-child(1) {
+    height: 19.67%;
+}
+
+.box2:nth-child(2) {
+    height: 80.33%;
+}
+
+.box3:nth-child(1) {
+    height: 25%;
+}
+
+.box3:nth-child(2) {
+    height: 50%;
+}
+
+.box3:nth-child(3) {
+    height: 25%;
+}
+
+footer {
+    background: Grey;
+    height: 70px;
+    
+    margin-top: 30px;
+}
+
