@@ -269,7 +269,7 @@ a {
     
     margin: 0px 10px;
     
-    height: 590px;
+    height: 700px;
     
     overflow-y: scroll;
 }
@@ -326,11 +326,41 @@ input[type=button]:active {
     background-image: linear-gradient(#00ff00,#00bc00);
 }
 
-img {
+#images img {
     transition: 1s;
 }
 
-img:hover {
+#images img:hover {
     filter: blur(0px);
     transform: scale(1.1);
+}
+
+.bottomhoodies {
+    margin-top: 100px;
+}
+
+footer {
+    display: flex;
+    flex-flow: row;
+    
+    background-image: url(../images/backgroundImages/weirdkiddo.png);
+    
+    justify-content: space-around;
+}
+
+footer li {
+    margin-bottom: 20px;
+}
+
+footer li a {
+    color: white;
+    font-family: roboto;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+}
+
+footer .bottomlink {
+    margin-bottom: 0px;
 }
