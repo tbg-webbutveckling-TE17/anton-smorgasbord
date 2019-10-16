@@ -83,10 +83,26 @@ for(i = 1; i <= choices.length; i++) {
 
         document.writeln("<br/>");
     }
-    
-for(var i = 10; i > 0; i--) {
-    for(var ii = 10; ii <= i; i++) {
-        document.writeln("* ")
+
+
+ document.writeln("<br/>");
+
+
+for(var i = 0; i <= 10; i++) {
+    for(var ii = 0; ii <= i; ii++) {
+        document.writeln("* ");
     }
+    document.writeln("<br/>");
 }
+
+for(var i = 10; i >= 0; i--) {
+    for(var ii = 0; ii <= i; ii++) {
+        document.writeln("* ");
+    }
+    document.writeln("<br/>");
+}
+
+
+
+
 
