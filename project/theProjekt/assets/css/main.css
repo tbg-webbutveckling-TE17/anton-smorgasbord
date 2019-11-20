@@ -42,7 +42,7 @@ video {
 
 .activelink {
     color: #ffffff;
-    font-family: roboto;
+    font-family: arial;
     font-weight: 1000;
     
     padding-right: 15px;
@@ -80,7 +80,7 @@ video {
     text-align: center;
     color: #DE1A1A;
     font-weight: 600;
-    font-family: roboto;
+    font-family: arial;
     
     
 }
@@ -167,7 +167,7 @@ a {
     
     color: #DE1A1A;
     font-weight: 600;
-    font-family: roboto;
+    font-family: arial;
 }
 
 #siteImg {
@@ -251,18 +251,18 @@ a {
 
 #gamingPicture {
     display: flex;
-    justify-content: center;
-    align-items: center;
     
     height: 600px;
-    
+
+    background-position:center ;    
     background-image: url(../images/backgroundImages/computer.png);
+    background-repeat: ;
 }
 
 
 #clothingh1 {
     color: white;
-    font-family: roboto;
+    font-family: arial;
     font-weight: 1000;
     font-size: 76px;
     
@@ -288,9 +288,8 @@ a {
     display: flex;
     flex-flow: row;
     
-    font-family: roboto;
+    font-family: arial;
     
-    margin:;
     padding: 0;
 }
 
@@ -312,7 +311,7 @@ a {
 }
 
 input[type=button] {
-    font-family: roboto;
+    font-family: arial;
     font-weight: 1000;
     font-size: 20px;
     color: white;
@@ -352,8 +351,12 @@ input[type=button]:active {
 footer {
     display: flex;
     flex-flow: row;
+    width: auto;
     
     background-image: url(../images/backgroundImages/weirdkiddo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    
     
     justify-content: space-around;
 }
@@ -364,7 +367,7 @@ footer li {
 
 footer li a {
     color: white;
-    font-family: roboto;
+    font-family: arial;
 }
 
 footer li a:hover {

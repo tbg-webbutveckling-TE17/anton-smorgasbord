@@ -1,4 +1,4 @@
-function isEven(num) {
+ function isEven(num) {
     if(num % 2 == 0) {
         return true
     } else {
@@ -81,3 +81,40 @@ clearInterval(intervalExample);
  myTimer();
 
  var myTime = setInterval(myTimer, 1000)
+
+ var stop8tn = document.getElementsByTagName("button")[0];
+ stop8tn.addEventListener("mouseenter", function() {
+     clearInterval(myTime, 1000);
+     alert("The timer has stopped!");
+ });
+
+
+
+ stop8tn.addEventListener("mouseleave", function() {
+     myTime = setInterval(myTimer, 1000);
+     alert("The time is running again!");
+ });
+
+ function calculateTip(total) {
+     var tipPercent = 0.15;
+     return total = tipPercent;
+ }
+
+ var billTotal = prompt("Quanto Costa?");
+ var billTip = calculateTip(billTotal);
+ var receipt = "Bill total: " + billTotal + ":- Tip: " + billTip + ":-";
+ var displayBill = document.getElementsByClassName("displayBill") [0];
+ displayBill.innerHTML = receipt; 
+
+ var jobArray = ["succesfull youtuber", "slave", "office worker", "succesfull actor", "dumpster collector"];
+ var locArray = ["malå", "hollywood", "india", "america", "sweden", "every country"];
+ var partnerArray = ["Scarlet Johansson", "Jennifer Lawrance", "Megan Fox", "97 year old Berta that needs help changing her diaper", "a homeless person, maybe a guy, hard to tell, without a name", "Sven, 70 years old", "Ricardo", "Astolfo", "any trap"];
+ var childrenArray = ["6", "0", "43", "1", "2", "3", "4", "5", "11", "13"]
+
+ function tellFortune(jobArray, locArray, partnerArray, childrenArray) {
+     var displayFuture = document.getElementsByClassName("fortune") [0];
+     var tellFuture = "You will be a " + jobArray[Math.floor(Math.random() * jobArray.length)] + " in " + locArray[Math.floor(Math.random() * locArray.length)] + " and will be married to " + partnerArray[Math.floor(Math.random() * partnerArray.length)] + " and you will have " +  childrenArray[Math.floor(Math.random() * childrenArray.length)] + " children";
+     displayFuture.innerHTML = tellFuture;
+ }
+
+ tellFortune(jobArray, locArray, partnerArray, childrenArray)

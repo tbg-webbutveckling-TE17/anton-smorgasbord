@@ -1,0 +1,29 @@
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 70px;
+
+    margin-top: 50px;
+
+    text-align: center;
+
+}
+
+#videos {
+    margin: auto;
+}
+
+iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+
+    border: none;
+
+    border: solid 10px black;
+
+    width: 800px;
+    height: 400px;
+}
