@@ -82,7 +82,7 @@ clearInterval(intervalExample);
 
  var myTime = setInterval(myTimer, 1000)
 
- var stop8tn = document.getElementsByTagName("button")[0];
+ var stop8tn = document.getElementsByClassName("button")[0];
  stop8tn.addEventListener("mouseenter", function() {
      clearInterval(myTime, 1000);
      alert("The timer has stopped!");
@@ -96,7 +96,7 @@ clearInterval(intervalExample);
  });
 
  function calculateTip(total) {
-     var tipPercent = 0.15;
+     var tipPercent = Math.floor(billTotal * 0.15);
      return total = tipPercent;
  }
 
@@ -118,3 +118,23 @@ clearInterval(intervalExample);
  }
 
  tellFortune(jobArray, locArray, partnerArray, childrenArray)
+
+ var refreshFortune = document.getElementsByClassName("button2") [0];
+ refreshFortune.addEventListener("click", function() {
+    tellFortune(jobArray, locArray, partnerArray, childrenArray)
+ })
+
+ var puppyAge = prompt("How old is your dog in human years?")
+ function calculateDogYears(puppyAge) {
+    var displayDogYears = document.getElementsByClassName("dogge") [0];
+    var dogYears = puppyAge * 7;
+    var tellDogYears = "Your dog is " + dogYears + " in dog years"
+    
+    displayDogYears.innerHTML = tellDogYears; 
+ }
+
+ calculateDogYears(puppyAge)
+
+
+
+
