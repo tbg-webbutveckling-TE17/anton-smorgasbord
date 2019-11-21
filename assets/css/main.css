@@ -1,8 +1,14 @@
 @charset "utf-8";
 
 body {
-    background-color: green;
-    margin: auto;
+    background-color: #575fcf;
+    margin: 0;
+
+    font-family: 'Open Sans', sans-serif;
+
+    min-height: 1600px;
+
+    font-weight: bolder;
 }
 
 header {
@@ -11,10 +17,169 @@ header {
 
 main {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    max-width: 1210px;
+
+    margin: auto;
+    padding: 0;
+
 }
 
 section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-flow: column;
+
     border: 1px solid black;
+    
+    margin-left: -1px;
+    margin-top: -1px;
+
+    padding: 0;
+
     width: 300px;
     height: 300px;
+}
+
+.noBorder {
+    display: flex;
+    flex-flow: column;
+
+    height: 300px;
+    width: 300px;
+    margin: 0;
+    padding: 0px;
+
+    border: 0px;
+}
+
+
+
+.things {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: black;
+
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border-top: 1px solid black;
+}
+
+.things:first-child {
+    border-top: none;
+}
+
+#web2dropdown-content {
+    visibility: hidden;
+    position: absolute;
+}
+#web2dropdown-content2 {
+    visibility: hidden;
+    position: absolute;
+}
+#web1dropdown-content {
+    visibility: hidden;
+    position: absolute;
+}
+#web1dropdown-content2 {
+    visibility: hidden;
+    position: absolute;
+}
+#web1dropdown-content3 {
+    visibility: hidden;
+    position: absolute;
+}
+#web1dropdown-content4 {
+    visibility: hidden;
+    position: absolute;
+}
+#web1dropdown-content5 {
+    visibility: hidden;
+    position: absolute;
+}
+#web1dropdown-content6 {
+    visibility: hidden;
+    position: absolute;
+}
+#web1dropdown-content7 {
+    visibility: hidden;
+    position: absolute;
+}
+#web1dropdown-content8 {
+    visibility: hidden;
+    position: absolute;
+}
+#web1dropdown-content9 {
+    visibility: hidden;
+    position: absolute;
+}
+
+.things:hover {
+    background-color: #34e7e4;
+}
+
+#web2dropdown:hover #web2dropdown-content {
+    visibility: visible;
+    position: relative;
+}
+#web2dropdown2:hover #web2dropdown-content2 {
+    visibility: visible;
+    position: relative;
+}
+
+#web1dropdown:hover #web1dropdown-content {
+    visibility: visible;
+    position: relative;
+}
+
+#web1dropdown2:hover #web1dropdown-content2 {
+    visibility: visible;
+    position: relative;
+}
+#web1dropdown3:hover #web1dropdown-content3 {
+    visibility: visible;
+    position: relative;
+}
+#web1dropdown4:hover #web1dropdown-content4 {
+    visibility: visible;
+    position: relative;
+}
+#web1dropdown5:hover #web1dropdown-content5 {
+    visibility: visible;
+    position: relative;
+}
+#web1dropdown6:hover #web1dropdown-content6 {
+    visibility: visible;
+    position: relative;
+}
+#web1dropdown7:hover #web1dropdown-content7 {
+    visibility: visible;
+    position: relative;
+}
+#web1dropdown8:hover #web1dropdown-content8 {
+    visibility: visible;
+    position: relative;
+}
+#web1dropdown9:hover #web1dropdown-content9 {
+    visibility: visible;
+    position: relative;
+}
+section:hover {
+    background-color: #f53b57;
+}
+
+section:hover h3 {
+    visibility: hidden;
+    position: absolute;
 }
