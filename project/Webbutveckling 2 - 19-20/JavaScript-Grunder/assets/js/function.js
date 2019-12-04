@@ -114,6 +114,7 @@ clearInterval(intervalExample);
  function tellFortune(jobArray, locArray, partnerArray, childrenArray) {
      var displayFuture = document.getElementsByClassName("fortune") [0];
      var tellFuture = "You will be a " + jobArray[Math.floor(Math.random() * jobArray.length)] + " in " + locArray[Math.floor(Math.random() * locArray.length)] + " and will be married to " + partnerArray[Math.floor(Math.random() * partnerArray.length)] + " and you will have " +  childrenArray[Math.floor(Math.random() * childrenArray.length)] + " children";
+
      displayFuture.innerHTML = tellFuture;
  }
 
@@ -133,8 +134,24 @@ clearInterval(intervalExample);
     displayDogYears.innerHTML = tellDogYears; 
  }
 
+
+
  calculateDogYears(puppyAge)
 
+ var snack = String(prompt("What type of snack would you like to eat for the rest of your life"))
+ var snackNumPerDay = (prompt("How many " + snack + " do you need for one day?"))
+ var howOld = (prompt("How old do you think you'll be?"))
 
+function calculateSupply () {
+    var displaySupply = document.getElementsByTagName("p") [4];
+    var yearSupply = snackNumPerDay * (howOld * 365);
+    var tellSupply = "You'll need " + yearSupply + " " + snack + " to survive your whole life!";
+    displaySupply.innerHTML = tellSupply;
+}
 
+calculateSupply(snack, snackNumPerDay, howOld)
 
+hiddenWord = Array["G", "O", "A", "T"];
+hiddenWordUnderline = Array["_", "_", "_", "_"]
+
+function()
