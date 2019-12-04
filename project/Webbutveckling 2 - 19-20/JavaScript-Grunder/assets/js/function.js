@@ -154,4 +154,4 @@ calculateSupply(snack, snackNumPerDay, howOld)
 hiddenWord = Array["G", "O", "A", "T"];
 hiddenWordUnderline = Array["_", "_", "_", "_"]
 
-function()
+// function() 
