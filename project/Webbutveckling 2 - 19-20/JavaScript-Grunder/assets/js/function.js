@@ -150,8 +150,22 @@ function calculateSupply () {
 }
 
 calculateSupply(snack, snackNumPerDay, howOld)
+var displayHiddenWord = document.getElementsByTagName("p") [5];
+var hiddenWord = ["G", "O", "A", "T"];
+var hiddenWordUnderline = ["_", "_", "_", "_"];
 
-hiddenWord = Array["G", "O", "A", "T"];
-hiddenWordUnderline = Array["_", "_", "_", "_"]
+// function()
 
-// function() 
+displayHiddenWord.innerHTML = hiddenWordUnderline;
+
+document.onkeypress = function(event) {
+    var myGuess = event.which;
+    var displayKey = document.getElementsByClassName("guess") [0];
+    displayKey.innerHTML = "The letter you pressed is: " + myGuess;
+}
+    
+
+
+
+
+// document.getElementsByClassName("ahoga").innerHTML = hiddenWord;
