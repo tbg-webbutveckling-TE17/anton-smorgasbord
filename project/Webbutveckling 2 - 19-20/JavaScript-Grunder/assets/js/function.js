@@ -1,169 +1,204 @@
- function isEven(num) {
-    if(num % 2 == 0) {
-        return true
-    } else {
-        return false
-    }
-}
+//  function isEven(num) {
+//     if(num % 2 == 0) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
 
-isEven(10)
+// isEven(10)
 
-console.log(isEven(10))
-console.log(isEven(13))
+// console.log(isEven(10))
+// console.log(isEven(13))
 
-function kebabToSnake(kebab) {
-    var myString = kebab.replace(/-/g, "_")
+// function kebabToSnake(kebab) {
+//     var myString = kebab.replace(/-/g, "_")
     
-    return myString
-}
+//     return myString
+// }
 
-kebabToSnake("I-am-a-kebab-cased-string")
+// kebabToSnake("I-am-a-kebab-cased-string")
 
-console.log(kebabToSnake("I-am-a-kebab-cased-string"))
+// console.log(kebabToSnake("I-am-a-kebab-cased-string"))
 
-function localScope() {
-    var showScope = 31;
-    console.log(showScope)
-}
+// function localScope() {
+//     var showScope = 31;
+//     console.log(showScope)
+// }
 
-localScope();
-console.log(showScope);
+// localScope();
+// console.log(showScope);
 
-var showScope = "I'm a global variable";
-console.log(showScope);
+// var showScope = "I'm a global variable";
+// console.log(showScope);
 
-var showGlobalVar = 99;
-function globalScope() {
-    showGlobalVar = 100;
-    console.log(showGlobalVar)
-}
+// var showGlobalVar = 99;
+// function globalScope() {
+//     showGlobalVar = 100;
+//     console.log(showGlobalVar)
+// }
 
-console.log(showGlobalVar)
-globalScope()
-console.log(showGlobalVar)
+// console.log(showGlobalVar)
+// globalScope()
+// console.log(showGlobalVar)
 
-function hi() {
-    var name = "Faggot"
-    console.log()
-}
+// function hi() {
+//     var name = "Faggot"
+//     console.log()
+// }
 
-hi()
+// hi()
 
-function bye() {
-    console.log(name)
-}
+// function bye() {
+//     console.log(name)
+// }
 
-function sing() {
-    console.log("I'm singing in the rain")
-    console.log("Just singing in the rain")
-    console.log("What a glorious feeling")
-}
+// function sing() {
+//     console.log("I'm singing in the rain")
+//     console.log("Just singing in the rain")
+//     console.log("What a glorious feeling")
+// }
 
-fisk = setInterval(sing, 1000);
-clearInterval(fisk);
+// fisk = setInterval(sing, 1000);
+// clearInterval(fisk);
 
-var intervalExample = setInterval(sing, 2000);
-clearInterval(intervalExample);
+// var intervalExample = setInterval(sing, 2000);
+// clearInterval(intervalExample);
 
- var anon = setInterval(function() {
-     console.log("I'm an anonomous function")
- }, 1500);
+//  var anon = setInterval(function() {
+//      console.log("I'm an anonomous function")
+//  }, 1500);
 
- clearInterval(anon)
+//  clearInterval(anon)
 
- function myTimer() {
-     var d = new Date();
-     var time = d.toLocaleTimeString();
-     document.getElementById("timeOutput").innerHTML = time;
+//  function myTimer() {
+//      var d = new Date();
+//      var time = d.toLocaleTimeString();
+//      document.getElementById("timeOutput").innerHTML = time;
 
- }
+//  }
 
- myTimer();
+//  myTimer();
 
- var myTime = setInterval(myTimer, 1000)
+//  var myTime = setInterval(myTimer, 1000)
 
- var stop8tn = document.getElementsByClassName("button")[0];
- stop8tn.addEventListener("mouseenter", function() {
-     clearInterval(myTime, 1000);
-     alert("The timer has stopped!");
- });
+//  var stop8tn = document.getElementsByClassName("button")[0];
+//  stop8tn.addEventListener("mouseenter", function() {
+//      clearInterval(myTime, 1000);
+//      alert("The timer has stopped!");
+//  });
 
 
 
- stop8tn.addEventListener("mouseleave", function() {
-     myTime = setInterval(myTimer, 1000);
-     alert("The time is running again!");
- });
+//  stop8tn.addEventListener("mouseleave", function() {
+//      myTime = setInterval(myTimer, 1000);
+//      alert("The time is running again!");
+//  });
 
- function calculateTip(total) {
-     var tipPercent = Math.floor(billTotal * 0.15);
-     return total = tipPercent;
- }
+//  function calculateTip(total) {
+//      var tipPercent = Math.floor(billTotal * 0.15);
+//      return total = tipPercent;
+//  }
 
- var billTotal = prompt("Quanto Costa?");
- var billTip = calculateTip(billTotal);
- var receipt = "Bill total: " + billTotal + ":- Tip: " + billTip + ":-";
- var displayBill = document.getElementsByClassName("displayBill") [0];
- displayBill.innerHTML = receipt; 
+//  var billTotal = prompt("Quanto Costa?");
+//  var billTip = calculateTip(billTotal);
+//  var receipt = "Bill total: " + billTotal + ":- Tip: " + billTip + ":-";
+//  var displayBill = document.getElementsByClassName("displayBill") [0];
+//  displayBill.innerHTML = receipt; 
 
- var jobArray = ["succesfull youtuber", "slave", "office worker", "succesfull actor", "dumpster collector"];
- var locArray = ["malå", "hollywood", "india", "america", "sweden", "every country"];
- var partnerArray = ["Scarlet Johansson", "Jennifer Lawrance", "Megan Fox", "97 year old Berta that needs help changing her diaper", "a homeless person, maybe a guy, hard to tell, without a name", "Sven, 70 years old", "Ricardo", "Astolfo", "any trap"];
- var childrenArray = ["6", "0", "43", "1", "2", "3", "4", "5", "11", "13"]
+//  var jobArray = ["succesfull youtuber", "slave", "office worker", "succesfull actor", "dumpster collector"];
+//  var locArray = ["malå", "hollywood", "india", "america", "sweden", "every country"];
+//  var partnerArray = ["Scarlet Johansson", "Jennifer Lawrance", "Megan Fox", "97 year old Berta that needs help changing her diaper", "a homeless person, maybe a guy, hard to tell, without a name", "Sven, 70 years old", "Ricardo", "Astolfo", "any trap"];
+//  var childrenArray = ["6", "0", "43", "1", "2", "3", "4", "5", "11", "13"]
 
- function tellFortune(jobArray, locArray, partnerArray, childrenArray) {
-     var displayFuture = document.getElementsByClassName("fortune") [0];
-     var tellFuture = "You will be a " + jobArray[Math.floor(Math.random() * jobArray.length)] + " in " + locArray[Math.floor(Math.random() * locArray.length)] + " and will be married to " + partnerArray[Math.floor(Math.random() * partnerArray.length)] + " and you will have " +  childrenArray[Math.floor(Math.random() * childrenArray.length)] + " children";
+//  function tellFortune(jobArray, locArray, partnerArray, childrenArray) {
+//      var displayFuture = document.getElementsByClassName("fortune") [0];
+//      var tellFuture = "You will be a " + jobArray[Math.floor(Math.random() * jobArray.length)] + " in " + locArray[Math.floor(Math.random() * locArray.length)] + " and will be married to " + partnerArray[Math.floor(Math.random() * partnerArray.length)] + " and you will have " +  childrenArray[Math.floor(Math.random() * childrenArray.length)] + " children";
 
-     displayFuture.innerHTML = tellFuture;
- }
+//      displayFuture.innerHTML = tellFuture;
+//  }
 
- tellFortune(jobArray, locArray, partnerArray, childrenArray)
+//  tellFortune(jobArray, locArray, partnerArray, childrenArray)
 
- var refreshFortune = document.getElementsByClassName("button2") [0];
- refreshFortune.addEventListener("click", function() {
-    tellFortune(jobArray, locArray, partnerArray, childrenArray)
- })
+//  var refreshFortune = document.getElementsByClassName("button2") [0];
+//  refreshFortune.addEventListener("click", function() {
+//     tellFortune(jobArray, locArray, partnerArray, childrenArray)
+//  })
 
- var puppyAge = prompt("How old is your dog in human years?")
- function calculateDogYears(puppyAge) {
-    var displayDogYears = document.getElementsByClassName("dogge") [0];
-    var dogYears = puppyAge * 7;
-    var tellDogYears = "Your dog is " + dogYears + " in dog years"
+//  var puppyAge = prompt("How old is your dog in human years?")
+//  function calculateDogYears(puppyAge) {
+//     var displayDogYears = document.getElementsByClassName("dogge") [0];
+//     var dogYears = puppyAge * 7;
+//     var tellDogYears = "Your dog is " + dogYears + " in dog years"
     
-    displayDogYears.innerHTML = tellDogYears; 
- }
+//     displayDogYears.innerHTML = tellDogYears; 
+//  }
 
 
 
- calculateDogYears(puppyAge)
+//  calculateDogYears(puppyAge)
 
- var snack = String(prompt("What type of snack would you like to eat for the rest of your life"))
- var snackNumPerDay = (prompt("How many " + snack + " do you need for one day?"))
- var howOld = (prompt("How old do you think you'll be?"))
+//  var snack = String(prompt("What type of snack would you like to eat for the rest of your life"))
+//  var snackNumPerDay = (prompt("How many " + snack + " do you need for one day?"))
+//  var howOld = (prompt("How old do you think you'll be?"))
 
-function calculateSupply () {
-    var displaySupply = document.getElementsByTagName("p") [4];
-    var yearSupply = snackNumPerDay * (howOld * 365);
-    var tellSupply = "You'll need " + yearSupply + " " + snack + " to survive your whole life!";
-    displaySupply.innerHTML = tellSupply;
-}
+// function calculateSupply () {
+//     var displaySupply = document.getElementsByTagName("p") [4];
+//     var yearSupply = snackNumPerDay * (howOld * 365);
+//     var tellSupply = "You'll need " + yearSupply + " " + snack + " to survive your whole life!";
+//     displaySupply.innerHTML = tellSupply;
+// }
 
-calculateSupply(snack, snackNumPerDay, howOld)
+// calculateSupply(snack, snackNumPerDay, howOld)
+
+
+// function()
 var displayHiddenWord = document.getElementsByTagName("p") [5];
 var hiddenWord = ["G", "O", "A", "T"];
 var hiddenWordUnderline = ["_", "_", "_", "_"];
-
-// function()
+var hiddenWordUnderlineReset = ["_", "_", "_", "_"];
+var wins = 0;
+var guesses = 9;
+var losses = 0;
+var showGuesses = document.getElementsByClassName("guesses") [0];
+var showWins = document.getElementsByClassName("wins") [0];
+var showLosses = document.getElementsByClassName("losses") [0];
 
 displayHiddenWord.innerHTML = hiddenWordUnderline;
+showWins.innerHTML = "You have " + wins + " wins!";
+showGuesses.innerHTML = "You have " + guesses + " left";
+showLosses.innerHTML = "You have " + losses + " losses!"
+
+
+
 
 document.onkeypress = function(event) {
-    var myGuess = event.which;
+    var myGuess = event.key;
     var displayKey = document.getElementsByClassName("guess") [0];
-    displayKey.innerHTML = "The letter you pressed is: " + myGuess;
-}
+    displayKey.innerHTML += myGuess;
     
+    for(var i = 0; i <= hiddenWord.length && i <= hiddenWordUnderline.length; i++) {
+        if(myGuess.toUpperCase() == hiddenWord[i]) {
+            hiddenWordUnderline[i] = myGuess;
+            displayHiddenWord.innerHTML = hiddenWordUnderline;
+        } 
+    }
+console.log(guesses)
+    if(guesses == 0) {
+        losses++;
+        showLosses.innerHTML = "You have " + losses + " losses!";
+        guesses = guesses + 10;
+        hiddenWordUnderline = hiddenWordUnderlineReset;
+        showGuesses.innerHTML = "You have " + guesses + " left";
+
+    } else{
+        guesses--;
+        showGuesses.innerHTML = "You have " + guesses + " left";
+        
+    }
+    
+}
+
 
 
 
