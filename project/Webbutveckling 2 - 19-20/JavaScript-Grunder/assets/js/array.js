@@ -60,3 +60,91 @@ var countries = ["sweden", "norway", "finland", "denmark", "island"];
 countries.forEach(function(country) {
     printToScreen.innerHTML += country + "<br/>"
 })
+
+printToScreen.innerHTML = "";
+var planets = ["earth", "mars", "saturnus", "jupiter"];
+planets.forEach(function(planet) {
+    printToScreen.innerHTML += planet + " - ";
+});
+
+printToScreen.innerHTML = "";
+var number = [1, 32, 44, 112, 3, 5, 6, 9, 12];
+var color = ["red", "green", "blue", "yellow"];
+
+number.forEach(function(num) {
+    if(num % 3 === 0) {
+        printToScreen.innerHTML += num + " ";
+    }
+});
+
+for(var i = 0; i < number.length; i++) {
+    if(number[i] & 3 === 0) {
+        printToScreen.innerHTML += number[i] + " ";
+    }
+}
+
+var foods = ["sausage", "meatballs", "pasta", "pizza"];
+foods.forEach(function(food) {
+    printToScreen.innerHTML += food + " ";
+});
+
+printToScreen.innerHTML = "";
+
+function printReverse(numbersers) {
+    var newArray = [];
+    for(var i = numbersers.length - 1; i >= 0; i--) {
+        newArray.push(numbersers[i]);
+        printToScreen.innerHTML = newArray.join("<br/>");
+
+    }
+    
+
+};
+
+var numbersers = [1, 2, 3, 4, 5, 6, 7];
+printReverse(numbersers);
+printToScreen.innerHTML = "";
+
+function isIdentical(array) {
+    for(var i = 1; i <= array.length - 1; i++) {
+        if(array[i] !== array[0]) {
+            return false
+        }
+    }
+
+    return true
+}
+
+isIdentical([1,1,1,1,1,1,1,1,1]);
+isIdentical([1,1,1,1,2,1,1,1,1]);
+
+function sumArray(array) {
+    var number = 0;
+    for(var i = 0; i <= array.length - 1; i++) {
+        number = number + array[i];
+    };
+
+    printToScreen.innerHTML = number;
+
+};
+
+sumArray([1,2,3,4,5]);
+
+function max(array) {
+    var maxx = array[0];
+    array.forEach(function(pogchamp){
+        if(pogchamp > maxx){
+            maxx = pogchamp;
+        };
+        
+    });
+    printToScreen.innerHTML = maxx;
+    return maxx;
+};
+
+max([2, 1, 23, 54, 4, 12]);
+
+
+
+
+
