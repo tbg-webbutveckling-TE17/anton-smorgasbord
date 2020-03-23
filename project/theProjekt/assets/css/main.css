@@ -170,6 +170,10 @@ a {
     font-family: arial;
 }
 
+.plswork:hover {
+    background-color:green;
+}
+
 #siteImg {
     margin-right: ;
 }
@@ -195,6 +199,10 @@ a {
     flex-direction: column;
     
     position: relative
+}
+
+#dropdown:hover {
+    background-color: #232326;
 }
 
 #dropdown2 {
