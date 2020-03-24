@@ -1,0 +1,48 @@
+body {
+    background-color: #1e272e;
+
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: flex;
+    border-bottom: 5px solid #d2dae2;
+    
+    width: 100%;
+    height: 18vh;
+
+    padding: 0;
+    margin: 0;
+
+    background-color: #f53b57 ;
+}
+
+ul {
+    display: flex;
+
+    padding: 0;
+    
+    margin: 0;
+
+    height: 100%;
+}
+
+li {
+    display: flex;
+    align-items: center;
+
+    list-style-type: none;
+
+    padding-right: 10px;
+    padding-left: 10px;
+
+    color: #d2dae2;
+    font-family: 'Open Sans', sans-serif;
+
+    background-color: #f53b57;
+}
+
+li:hover {
+    background-color: #f53b3b;
+}
+
