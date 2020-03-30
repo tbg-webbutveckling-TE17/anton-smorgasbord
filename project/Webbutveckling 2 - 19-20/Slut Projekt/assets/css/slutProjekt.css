@@ -9,7 +9,7 @@ header {
     border-bottom: 5px solid #d2dae2;
     
     width: 100%;
-    height: 18vh;
+    height: 50px;
 
     padding: 0;
     margin: 0;
@@ -38,11 +38,58 @@ li {
 
     color: #d2dae2;
     font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
 
     background-color: #f53b57;
 }
 
 li:hover {
-    background-color: #f53b3b;
+    background-color: #575fcf;
+}
+
+main {
+    
+}
+
+img {
+    position: relative;
+}
+
+.img3 {
+    margin-left: 0px;
+}
+
+.imgSlider {
+    display: flex;
+    
+    overflow-x: hidden;
+    margin-top: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    border: 1px solid white;
+    width: 1000px;
+    height: 500px;
+}
+
+.images {
+    display: flex;
+
+    width: 1000px;
+    height: 500px;
+}
+
+.imgSliderBtns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    
+
+    width: 1000px;
+    height: 500px;
+    
 }
 

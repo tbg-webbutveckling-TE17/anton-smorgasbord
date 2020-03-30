@@ -150,7 +150,7 @@ var hero = {
         hpBar.innerHTML = hero.hp = 100;
         manaBar.innerHTML = hero.mana = 30;
         btnRestart.style.opacity = 0;
-        heroImage.setAttribute("src", "../assets/images/Wizard.png")
+        heroImage.setAttribute("src", "../assets/images/Wizard.png");
         btnRestart.classList.remove("disableBtnRestart");
         btnDmgTaken.classList.remove("btnGameOver");
         btnManaRefill.classList.remove("btnGameOver");
