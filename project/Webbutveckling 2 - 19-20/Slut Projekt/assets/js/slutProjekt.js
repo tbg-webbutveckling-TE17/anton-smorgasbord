@@ -5,15 +5,25 @@ var sectionImages = document.querySelector(".images");
 var marginPx = 0;
 
 btnNextImage.addEventListener("click", function() {
-    marginPx = marginPx + (-1000);
-    sectionImages.style.marginLeft = marginPx + "px";
+    if(marginPx < -1000) {
+        marginPx = 0
+        sectionImages.style.marginLeft = marginPx + "px";
+    } else {
+        marginPx = marginPx + (-1000);
+        sectionImages.style.marginLeft = marginPx + "px";
+    }
+    
 
-    return marginPx;
 });
 
 btnPrevImage.addEventListener("click", function() {
-    marginPx = marginPx + 1000; 
-    sectionImages.style.marginLeft = marginPx + "px";
+    if(marginPx > (-1000)) {
+        marginPx = (-2000);
+        sectionImages.style.marginLeft = marginPx + "px";
+    } else {
+        marginPx = marginPx + 1000; 
+        sectionImages.style.marginLeft = marginPx + "px";
+    }
     
-    return marginPx;
+    
 });
