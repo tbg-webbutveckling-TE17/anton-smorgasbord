@@ -6,8 +6,10 @@ body {
 }
 header {
     display: flex;
+    justify-content: space-between;
+    position: ;
+
     border-bottom: 5px solid #d2dae2;
-    
     width: 100%;
     height: 50px;
 
@@ -28,11 +30,8 @@ h1 {
     margin: auto;
     margin-top: 50px;
 
-    width: 780px;
-
     padding-bottom: 5px;
     
-    border-bottom: 5px solid white;
 }
 
 ul {
@@ -51,14 +50,26 @@ li {
 
     list-style-type: none;
 
-    padding-right: 10px;
-    padding-left: 10px;
-
     color: #d2dae2;
     font-family: 'Open Sans', sans-serif;
     font-weight: bolder;
 
     background-color: #f53b57;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    
+    padding-right: 20px;
+    padding-left: 20px;
+
+    font-family: 'Open Sans', sans-serif;
+    color: #d2dae2;
+    text-decoration: none;
+
+    height: 100%;
+    width: 100%;
 }
 
 li:hover {
@@ -69,8 +80,12 @@ main {
     
 }
 
-img {
+.imgSlider img {
     position: relative;
+}
+
+figure {
+    width: 250px;
 }
 
 .img3 {
@@ -100,6 +115,26 @@ img {
     transition: all 0.5s ease-in-out;
 }
 
+.offers {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+figure section {
+    display: flex;
+    justify-content: space-between;
+}
+
+figure img {
+    transition: all 0.25s;
+}
+figure img:hover {
+    transform: scale(1.1);
+}
+
 .imgSliderBtns {
     display: flex;
     justify-content: space-between;
@@ -111,6 +146,10 @@ img {
     width: 1000px;
     height: 500px;
     
+}
+
+#home {
+    background-color: #575fcf;
 }
 
 .btnNext {
@@ -138,8 +177,12 @@ img {
     background-color: rgba(0, 0, 0, 0.322);
 }
 
-.fas {
+.fa-arrow-left, .fa-arrow-right {
     color: #d2dae2;
     font-size: 40px;
+}
+
+.fa-shopping-cart, .fa-user, .fa-comment {
+    margin-right: 10px;
 }
 
