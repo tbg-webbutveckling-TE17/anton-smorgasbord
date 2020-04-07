@@ -85,7 +85,30 @@ main {
 }
 
 figure {
-    width: 250px;
+    /* padding-left: 30px;
+    padding-right: 30px; */
+    margin-top: 0;
+    margin-bottom: 0;
+
+    background-color: #ffdd59;
+    
+    border-left: 3px solid #d2dae2;
+    border-right: 3px solid #d2dae2;
+
+    height: 100%;
+    width: 300px;
+}
+
+.backgroundColor {
+    display: flex;
+    justify-content: center;
+
+    background-color: #f53b57;
+
+    margin-top: 0;
+
+    width: 100%;
+    height: 300px;
 }
 
 .img3 {
@@ -121,15 +144,26 @@ figure {
     flex-direction: row;
 
     width: 100%;
+    height: 500px;
 }
 
 figure section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+
+    -webkit-text-stroke: 0.25px #1e272e;
+    font-weight: bolder;
+    font-size: 30px;
+    color: #0be881;
+    font-family: 'Open Sans', sans-serif;
+
+    margin-top: 30px;
 }
 
 figure img {
     transition: all 0.25s;
+
+    height: 300px;
 }
 figure img:hover {
     transform: scale(1.1);
@@ -142,7 +176,6 @@ figure img:hover {
 
     position: absolute;
     
-
     width: 1000px;
     height: 500px;
     
