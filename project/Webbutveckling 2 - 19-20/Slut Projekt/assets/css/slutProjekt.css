@@ -72,6 +72,27 @@ a {
     width: 100%;
 }
 
+h3 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #d2dae2;
+    text-shadow: 0px 3px 0px black;
+
+    margin: 0;
+    margin-top: 20px;
+}
+
+.specifikations {
+    padding: 10px 0px;
+    /* margin-top: 30px; */
+
+    font-family: 'Open Sans', sans-serif;
+
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+}
+
 li:hover {
     background-color: #575fcf;
 }
@@ -85,6 +106,9 @@ main {
 }
 
 figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     /* padding-left: 30px;
     padding-right: 30px; */
     margin-top: 0;
@@ -97,6 +121,7 @@ figure {
 
     height: 100%;
     width: 300px;
+
 }
 
 .backgroundColor {
@@ -157,7 +182,7 @@ figure section {
     color: #0be881;
     font-family: 'Open Sans', sans-serif;
 
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 figure img {
