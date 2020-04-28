@@ -1,6 +1,7 @@
 var btnPrevImage = document.querySelector(".btnPrev");
 var btnNextImage = document.querySelector(".btnNext");
 var sectionImages = document.querySelector(".images");
+var headerScroll = document.querySelector("header");
 
 var marginPx = 0;
 
@@ -27,3 +28,11 @@ btnPrevImage.addEventListener("click", function() {
     
     
 });
+
+window.addEventListener("scroll", function() {
+    if(headerScroll.scrolltop > 100) {
+        headerScroll.style.height = 0 + "px";
+    };
+})
+
+

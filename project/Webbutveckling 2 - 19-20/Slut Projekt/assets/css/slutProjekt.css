@@ -7,11 +7,14 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    position: ;
+    position: fixed;
 
     border-bottom: 5px solid #d2dae2;
     width: 100%;
     height: 50px;
+    top: 0;
+
+    z-index: 1;
 
     padding: 0;
     margin: 0;
