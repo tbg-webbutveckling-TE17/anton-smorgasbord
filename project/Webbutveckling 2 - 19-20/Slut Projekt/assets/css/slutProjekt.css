@@ -4,7 +4,7 @@ body {
     padding: 0;
     margin: 0;
 }
-header {
+#links {
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -20,6 +20,42 @@ header {
     margin: 0;
 
     background-color: #f53b57 ;
+}
+
+#cart {
+    z-index: 1;
+
+    position: fixed;
+    
+    height: 700px;
+    width: 600px;
+
+    margin-top: -350px;
+    margin-left: -300px;
+
+    top: 50%;
+    left: 50%;
+
+    border: 2px solid black;
+
+    background-color: white;
+}
+
+.fa-times {
+    position: absolute;
+
+    padding: 20px;
+
+    right: 0;
+}
+.fa-times:hover {
+    background-color: teal;
+}
+
+#cartHeader {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
 }
 
 h1 {

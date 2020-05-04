@@ -29,10 +29,5 @@ btnPrevImage.addEventListener("click", function() {
     
 });
 
-window.addEventListener("scroll", function() {
-    if(headerScroll.scrolltop > 100) {
-        headerScroll.style.height = 0 + "px";
-    };
-})
 
 
