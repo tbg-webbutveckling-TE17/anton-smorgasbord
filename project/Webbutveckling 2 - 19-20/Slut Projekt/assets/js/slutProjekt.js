@@ -35,11 +35,13 @@ btnPrevImage.addEventListener("click", function() {
 
 cartBtn.addEventListener("click", function() {
     cart.style.visibility = "visible";
+    cart.style.opacity = 1;
     mainContent.style.filter = "blur(30px)";    
 });
 
 cartXBtn.addEventListener("click", function() {
     cart.style.visibility = "hidden";
+    cart.style.opacity = 0;
     mainContent.style.filter = "blur(0px)";
 });
 
