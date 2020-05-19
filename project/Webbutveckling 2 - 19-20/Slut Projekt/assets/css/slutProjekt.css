@@ -21,6 +21,9 @@ body {
 
     background-color: #f53b57 ;
 }
+.createdImages {
+    width: 20%;
+}
 
 #cart {
     z-index: 1;
