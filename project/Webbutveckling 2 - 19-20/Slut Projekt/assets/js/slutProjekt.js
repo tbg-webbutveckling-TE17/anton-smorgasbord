@@ -6,9 +6,8 @@ var cartBtn = document.querySelector("#cartBtn");
 var cartXBtn = document.querySelector(".fa-times");
 var cart = document.querySelector("#cart");
 var mainContent = document.querySelector("main");
-
-
-var goods = [];
+var buyBtn1 = document.querySelector(".buyBtn1");
+var cartProducts = [];
 
 var marginPx = 0;
 
@@ -74,9 +73,26 @@ var products = [
         product: 1,
         price: "5.390 kr"
     }
-]
+];
 
-var testImg = document.createElement("img");
-testImg.classList.add("createdImages");
-testImg.src = products[0].product;
-cart.appendChild(testImg);
+buyBtn1.addEventListener("click", function() {
+    
+    // var graphicsCard1 = document.createElement("img");
+
+    // graphicsCard1.classList.add("createdImages");
+    // graphicsCard1.src = products[0].product;
+    // cart.appendChild(graphicsCard1);
+    // cartProducts.push(graphicsCard1);
+
+    cart.innerHTML += "<p>" + products[0].name + "</p>" + "<img src='" + products[0].product + "'>" + "<p onclick='removeFunction'> X </p>";
+
+    var xoxo = cart.innerHTML;
+    console.log(xoxo);
+
+    cartProducts.push(xoxo);
+    console.log(cartProducts);
+});
+
+function removeFunction() {
+    cartProducts.splice(this,1);
+}
