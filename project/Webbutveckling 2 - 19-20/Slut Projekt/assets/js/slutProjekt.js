@@ -7,7 +7,7 @@ var cartXBtn = document.querySelector(".fa-times");
 var cart = document.querySelector("#cart");
 var mainContent = document.querySelector("main");
 var buyBtn1 = document.querySelector(".buyBtn1");
-var cartProducts = [];
+var buyBtn2 = document.querySelector(".buyBtn2");
 
 var marginPx = 0;
 
@@ -55,7 +55,7 @@ var products = [
     },
     {
         name: "GTX GEFORCE 1060",
-        product: 1,
+        product: "assets/images/1660.png",
         price: "2.990 kr"
     },
     {
@@ -76,23 +76,45 @@ var products = [
 ];
 
 buyBtn1.addEventListener("click", function() {
-    
-    // var graphicsCard1 = document.createElement("img");
+    var name = document.createElement("p");
+    name.innerHTML = products[0].name;
+    cart.appendChild(name);
+    var product = document.createElement("img");
+    product.classList.add("createdImages");
+    product.src = products[0].product;
+    cart.appendChild(product);
+    var removeBtn = document.createElement("button");
+    removeBtn.innerHTML = "x";
+    cart.appendChild(removeBtn);
 
-    // graphicsCard1.classList.add("createdImages");
-    // graphicsCard1.src = products[0].product;
-    // cart.appendChild(graphicsCard1);
-    // cartProducts.push(graphicsCard1);
+    removeBtn.onclick = removeItem;
 
-    cart.innerHTML += "<p>" + products[0].name + "</p>" + "<img src='" + products[0].product + "'>" + "<p onclick='removeFunction'> X </p>";
+    function removeItem() {
+        cart.removeChild(product);
+        cart.removeChild(name);
+        cart.removeChild(removeBtn);
 
-    var xoxo = cart.innerHTML;
-    console.log(xoxo);
+    };    
+});
+buyBtn2.addEventListener("click", function() {
+    var name = document.createElement("p");
+    name.innerHTML = products[1].name;
+    cart.appendChild(name);
+    var product = document.createElement("img");
+    product.classList.add("createdImages");
+    product.src = products[1].product;
+    cart.appendChild(product);
+    var removeBtn = document.createElement("button");
+    removeBtn.innerHTML = "x";
+    cart.appendChild(removeBtn);
 
-    cartProducts.push(xoxo);
-    console.log(cartProducts);
+    removeBtn.onclick = removeItem;
+
+    function removeItem() {
+        cart.removeChild(product);
+        cart.removeChild(name);
+        cart.removeChild(removeBtn);
+
+    };    
 });
 
-function removeFunction() {
-    cartProducts.splice(this,1);
-}
