@@ -3,10 +3,14 @@ body {
 
     padding: 0;
     margin: 0;
+
+    height: 500px;
+
 }
 #links {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
 
     border-bottom: 5px solid #d2dae2;
@@ -29,6 +33,8 @@ body {
     display: flex;
     flex-flow: column;
 
+    align-items: center;
+
     z-index: 1;
 
     visibility: hidden;
@@ -48,11 +54,70 @@ body {
     top: 50%;
     left: 50%;
 
-    border: 2px solid black;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
 
-    background-color: brown;
+    background-color: #485460;
 
     transition: all 0.4s;
+}
+#specifications {
+    display: flex;
+    flex-flow: column;
+
+    align-items: center;
+
+    z-index: 1;
+
+    visibility: hidden;
+
+    overflow-y: scroll;
+
+    opacity: 0;
+
+    position: fixed;
+    
+    height: 700px;
+    width: 600px;
+
+    margin-top: -350px;
+    margin-left: -300px;
+
+    top: 50%;
+    left: 50%;
+
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+
+    background-color: #485460;
+
+    transition: all 0.4s;
+}
+
+#cart p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 0px 1px 0px #0be881;
+}
+
+#cart button {
+    background-color: #ff5e57;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color:white;
+    text-shadow: 0px 2px black;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin-top: 12px;
+
+    height: 30px;
+    
+}
+
+
+.ownSetup {
+    margin-top: 100px;
 }
 
 #cart img {
@@ -65,27 +130,48 @@ body {
     
 }
 
-.fa-times {
-    position: absolute;
+#cartHeader .fa-times {
+    position: fixed;
 
     padding: 20px;
 
     border-bottom-left-radius: 5px;
 
-    right: 0;
+    top: 50%;
+    left:50%;
+
+    margin-top: -350px;
+    margin-left: 235px;
 }
 .fa-times:hover {
-    background-color: teal;
+    background-color: #0fbcf9;
+    color: white;
 }
 
 #cartHeader {
     display: flex;
     position: relative;
-    justify-content: space-around;
+    justify-content: center;
+
+    /* margin-top: -20px; */
+}
+#cart .totalPrice {
+    position: fixed;
+
+    top: 50%;
+    left:50%;
+
+    margin-top: 300px;
+    margin-left: 130px;
+}
+#cartHeader  h1{
+    margin: 0;
+    color: white;
+    text-shadow:0px 3px 0px black;
 }
 
 h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 50px;
     text-transform: uppercase;
@@ -116,7 +202,7 @@ li {
     list-style-type: none;
 
     color: #d2dae2;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
 
     background-color: #f53b57;
@@ -129,7 +215,7 @@ a {
     padding-right: 20px;
     padding-left: 20px;
 
-    font-family: 'Open Sans', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #d2dae2;
     text-decoration: none;
 
@@ -143,7 +229,7 @@ a {
 
 h3 {
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #d2dae2;
     text-shadow: 0px 3px 0px black;
 
@@ -155,7 +241,7 @@ h3 {
     padding: 10px 0px;
     /* margin-top: 30px; */
 
-    font-family: 'Open Sans', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 
     border-right: none;
     border-left: none;
@@ -250,11 +336,11 @@ figure section {
     display: flex;
     justify-content: space-around;
 
-    -webkit-text-stroke: 0.25px #1e272e;
-    font-weight: bolder;
+    font-weight: 1000;
     font-size: 30px;
+    text-shadow: 0px 3px white;
     color: #0be881;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 
     /* margin-top: 30px; */
 }
@@ -318,3 +404,34 @@ figure img:hover {
     margin-right: 10px;
 }
 
+#cart section {
+    display: flex;
+    flex-flow: row;
+
+    margin-left: 30px;
+}
+/* #cart section h1{
+    margin-top: 10px;
+} */
+
+#cart section button {
+    margin-left: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+
+    position: relative;
+
+    background-color: #192127;
+
+    height: 400px;
+
+    margin-top: 200px;
+}
+
+footer section {
+    height: 100px;
+    /* width: 100%; */
+}
