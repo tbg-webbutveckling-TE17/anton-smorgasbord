@@ -318,7 +318,7 @@ buyBtn1.addEventListener("click", function() {
     price.innerHTML = products[0].price + " kr";
     section.appendChild(price);
     var removeBtn = document.createElement("button");
-    removeBtn.innerHTML = "Remove";
+    removeBtn.innerHTML = "Ta Bort";
     section.appendChild(removeBtn);
 
     removeBtn.onclick = removeItem;
@@ -352,7 +352,7 @@ buyBtn2.addEventListener("click", function() {
     price.innerHTML = products[1].price + " kr";
     section.appendChild(price);
     var removeBtn = document.createElement("button");
-    removeBtn.innerHTML = "Remove";
+    removeBtn.innerHTML = "Ta Bort";
     section.appendChild(removeBtn);
 
     removeBtn.onclick = removeItem;
@@ -385,7 +385,7 @@ buyBtn3.addEventListener("click", function() {
     price.innerHTML = products[2].price + " kr";
     section.appendChild(price);
     var removeBtn = document.createElement("button");
-    removeBtn.innerHTML = "Remove";
+    removeBtn.innerHTML = "Ta Bort";
     section.appendChild(removeBtn);
 
     removeBtn.onclick = removeItem;
@@ -418,7 +418,7 @@ buyBtn4.addEventListener("click", function() {
     price.innerHTML = products[3].price + " kr";
     section.appendChild(price);
     var removeBtn = document.createElement("button");
-    removeBtn.innerHTML = "Remove";
+    removeBtn.innerHTML = "Ta Bort";
     section.appendChild(removeBtn);
 
     removeBtn.onclick = removeItem;
@@ -451,7 +451,7 @@ buyBtn5.addEventListener("click", function() {
     price.innerHTML = products[4].price + " kr";
     section.appendChild(price);
     var removeBtn = document.createElement("button");
-    removeBtn.innerHTML = "Remove";
+    removeBtn.innerHTML = "Ta Bort";
     section.appendChild(removeBtn);
 
     removeBtn.onclick = removeItem;
@@ -484,7 +484,7 @@ buyBtn6.addEventListener("click", function() {
     price.innerHTML = products[5].price + " kr";
     section.appendChild(price);
     var removeBtn = document.createElement("button");
-    removeBtn.innerHTML = "Remove";
+    removeBtn.innerHTML = "Ta Bort";
     section.appendChild(removeBtn);
 
     removeBtn.onclick = removeItem;
@@ -517,7 +517,7 @@ buyBtn7.addEventListener("click", function() {
     price.innerHTML = products[6].price + " kr";
     section.appendChild(price);
     var removeBtn = document.createElement("button");
-    removeBtn.innerHTML = "Remove";
+    removeBtn.innerHTML = "Ta Bort";
     section.appendChild(removeBtn);
 
     removeBtn.onclick = removeItem;
@@ -550,7 +550,7 @@ buyBtn8.addEventListener("click", function() {
     price.innerHTML = products[7].price + " kr";
     section.appendChild(price);
     var removeBtn = document.createElement("button");
-    removeBtn.innerHTML = "Remove";
+    removeBtn.innerHTML = "Ta Bort";
     section.appendChild(removeBtn);
 
     removeBtn.onclick = removeItem;
@@ -583,7 +583,7 @@ buyBtn9.addEventListener("click", function() {
     price.innerHTML = products[8].price + " kr";
     section.appendChild(price);
     var removeBtn = document.createElement("button");
-    removeBtn.innerHTML = "Remove";
+    removeBtn.innerHTML = "Ta Bort";
     section.appendChild(removeBtn);
 
     removeBtn.onclick = removeItem;
@@ -616,7 +616,7 @@ buyBtn10.addEventListener("click", function() {
     price.innerHTML = products[9].price + " kr";
     section.appendChild(price);
     var removeBtn = document.createElement("button");
-    removeBtn.innerHTML = "Remove";
+    removeBtn.innerHTML = "Ta Bort";
     section.appendChild(removeBtn);
 
     removeBtn.onclick = removeItem;
